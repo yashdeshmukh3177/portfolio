@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashraj Deshmukh - Portfolio</title>
+    <!-- Add tab icon -->
+    <link rel="icon" href="https://media.discordapp.net/attachments/1074720627921002526/1222872012968558602/ypng.png?ex=6617cb4f&is=6605564f&hm=34cc6c8b8f556ab3d0c50b1807b31929956c1c199a5ed7e09e02f97c6b22c425&=&format=webp&quality=lossless&width=613&height=613" type="image/png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 255, 0.7)), url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/212b34104893379.5f6cc87656bf0.gif') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white; /* Text color */
+        }
+
+        .container {
+            max-width: 90%; /* Adjusted to fit the screen better */
+            width: 800px; /* Added a fixed width */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px; /* Added padding for better spacing */
+        }
+
+        .card {
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            margin-left: auto; /* Move social icons to right corner */
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; /* Added margin-bottom to increase distance */
+        }
+
+        .social-icons a, .contact a {
+            margin: 10px;
+            color: white; /* Text color */
+            font-size: 16px; /* Reduced font size for better fit */
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-icons a:hover, .contact a:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .social-icons a:not(:last-child), .contact a:not(:last-child) {
+            margin-right: 15px; /* Increase margin between buttons */
+        }
+
+        .skill-list {
+            list-style: none; /* Remove default bullet points */
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            grid-gap: 10px; /* Spacing between items */
+        }
+
+        .skill-list li {
+            margin: 0; /* Reset margin */
+        }
+
+        /* Background styling for the last three cards */
+        .lower-container {
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .lower-container .card {
+            background-color: rgba(0, 0, 0, 0.7); /* Dark translucent background color */
+        }
+
+        .lower-container .card:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        /* Lines between categories */
+        .lower-container .card:not(:last-child) {
+            border-bottom: 2px solid white;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+
+        /* Remove bottom margin and padding for the last skill-list */
+        .lower-container .card:last-child .skill-list {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        /* Enlarge text and center it */
+        .center-text {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        /* Align social icons to the right */
+        .contact {
+            margin-left: auto;
+        }
+
+        /* Copyright notice */
+        .copyright {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        /* Animation for playing forward and then reversing */
+        @keyframes playForwardAndReverse {
+            0% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 100% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        /* Apply animation to the background */
+        body {
+            animation: playForwardAndReverse 6s linear infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="center-text">Yashraj Deshmukh</h1>
+            <div class="social-icons">
+                <a href="https://instagram.com/thevin.d" target="_blank">Instagram</a>
+                <a href="https://discord.com/users/993033538838482986" target="_blank">Discord</a>
+                <a href="https://www.youtube.com/@thevindx2" target="_blank">YouTube</a>
+                <a href="https://open.spotify.com/artist/6N2l5QQZ7WOaQcMnoQCQJ2?si=polY4gtsTYaAlaIukjF35g" target="_blank">Spotify</a>
+                <a href="mailto:deshmukhyashraj324@gmail.com" class="contact">Contact</a>
+            </div>
+        </div>
+
+        <!-- Container for the combined lower three cards -->
+        <div class="lower-container">
+            <div class="card">
+                <h2>Skills</h2>
+                <ul class="skill-list">
+                    <li>Artist</li>
+                    <li>Graphic Designer</li>
+                    <li>Social Media Manager</li>
+                    <li>Discord Server Designer</li>
+                    <li>Bot Developer</li>
+                    <li>Partner Manager</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Graphic Designing</h2>
+                <ul class="skill-list">
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Photopea</li>
+                    <li>Canva</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Programming</h2>
+                <ul class="skill-list">
+                    <li>Python Frontend</li>
+                    <li>JavaScript</li>
+                    <li>Lua (learning)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright notice -->
+        <div class="copyright">
+            &copy; All rights reserved.
+        </div>
+    </div>
+</body>
+
+</html>
