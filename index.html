@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yashraj Deshmukh - Portfolio</title>
-    <!-- Add tab icon -->
     <link rel="icon" href="https://media.discordapp.net/attachments/1074720627921002526/1222872012968558602/ypng.png?ex=6617cb4f&is=6605564f&hm=34cc6c8b8f556ab3d0c50b1807b31929956c1c199a5ed7e09e02f97c6b22c425&=&format=webp&quality=lossless&width=613&height=613" type="image/png">
     <style>
         body {
@@ -18,16 +17,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white; /* Text color */
+            color: white;
         }
 
         .container {
-            max-width: 90%; /* Adjusted to fit the screen better */
-            width: 800px; /* Added a fixed width */
+            max-width: 90%;
+            width: 800px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px; /* Added padding for better spacing */
+            padding: 20px;
         }
 
         .card {
@@ -36,17 +35,43 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             width: 100%;
             margin-bottom: 20px;
-            text-align: center; /* Center align text */
+            text-align: center;
         }
 
-        /* Copyright notice */
+        .social-icons {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            margin: 10px;
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        /* Styling the Spotify embed container */
+        .embed-container {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
         .copyright {
             text-align: center;
             font-size: 12px;
             margin-top: 20px;
         }
 
-        /* Animation for playing forward and then reversing */
         @keyframes playForwardAndReverse {
             0% {
                 background-position: 0 0;
@@ -59,7 +84,6 @@
             }
         }
 
-        /* Apply animation to the background */
         body {
             animation: playForwardAndReverse 6s linear infinite;
         }
@@ -70,11 +94,18 @@
     <div class="container">
         <div class="card">
             <h1 class="center-text">Tamsick</h1>
+            <div class="social-icons">
+                <a href="https://instagram.com/tamsickofit" target="_blank">Instagram</a>
+                <a href="https://discord.com/users/993033538838482986" target="_blank">Discord</a>
+                <a href="https://www.youtube.com/@tamsickofit" target="_blank">YouTube</a>
+                <a href="https://open.spotify.com/artist/7jB1HTBDku1Drjt64Vyb24" target="_blank">Spotify</a>
+                <a href="mailto:tamsick130@gmail.com">Contact</a>
+            </div>
             <h2>Recent Release:</h2>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5V5R40hzO6tNfgxczzUFCi?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="embed-container">
+                <iframe style="border-radius:12px; filter: opacity(0.9) contrast(0.8);" src="https://open.spotify.com/embed/track/5V5R40hzO6tNfgxczzUFCi?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
         </div>
-
-        <!-- Copyright notice -->
         <div class="copyright">
             &copy; All rights reserved.
         </div>
